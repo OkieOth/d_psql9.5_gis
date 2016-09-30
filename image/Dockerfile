@@ -1,5 +1,5 @@
 FROM postgres:9.5
-RUN apt-get update && apt-get install -y --force-yes postgresql-9.3-postgis-2.1
+RUN apt-get update && apt-get install -y --force-yes postgresql-9.5-postgis-2.3
 
 COPY scripts/import.sh /import.sh
 COPY pgtune-0.9.3.tar.gz /opt
